@@ -7,7 +7,7 @@ import com.rockbite.bootcamp.MyGdxGame;
 
 public class DesktopLauncher {
     //Atlas rebuilding flag
-    private final static boolean rebuildAtlas = true;
+    private static boolean rebuildAtlas = true;
 
     public static void main(String[] arg) {
 
@@ -16,7 +16,7 @@ public class DesktopLauncher {
             settings.maxWidth = 2048;
             settings.maxHeight = 2048;
             settings.duplicatePadding = false;
-            //TexturePacker.process(settings, source folder of pictures to be compiled)
+            //TexturePacker.process(settings, source folder of images, output folder, atlas file)
             TexturePacker.process(settings, "pics",
                     "images",
                     "butterflyAtlas");

@@ -19,19 +19,18 @@ public class MyGdxGame extends ApplicationAdapter {
     float yPos = 650;
 
     //one step of a texture
-    private final float delta = 1;
+    private final static float delta = 1;
     //counter for rendering animation
     private float counter;
     //index of region in the texture
     private int index = 0;
     //index that show how long yPos must not be changed
     private int stopIndex = 0;
-    //array of regions from texture
     private final Array<TextureAtlas.AtlasRegion> regions = new Array<>();
-    //internal path of compiled images
-    private final String internalPathOfCompilingPictures = "images/butterflyAtlas.png";
-    //internal path of TextureAtlas
+    //internal path of the texture
     private final String textureInternalPath = "images/butterflyAtlas.png";
+    //index of the regions in atlas
+    private final int regionIndex = -1;
 
     @Override
     public void create() {
@@ -39,26 +38,27 @@ public class MyGdxGame extends ApplicationAdapter {
         img = new Texture(textureInternalPath);
         img.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
 
-        TextureAtlas textureAtlas = new TextureAtlas(internalPathOfCompilingPictures);
+        TextureAtlas textureAtlas = new TextureAtlas("images/butterflyAtlas.atlas");
 
-        regions.add(textureAtlas.findRegion("1", -1));
-        regions.add(textureAtlas.findRegion("2", -1));
-        regions.add(textureAtlas.findRegion("3", -1));
-        regions.add(textureAtlas.findRegion("4", -1));
-        regions.add(textureAtlas.findRegion("5", -1));
-        regions.add(textureAtlas.findRegion("6", -1));
-        regions.add(textureAtlas.findRegion("7", -1));
-        regions.add(textureAtlas.findRegion("8", -1));
-        regions.add(textureAtlas.findRegion("9", -1));
-        regions.add(textureAtlas.findRegion("10", -1));
-        regions.add(textureAtlas.findRegion("11", -1));
-        regions.add(textureAtlas.findRegion("12", -1));
-        regions.add(textureAtlas.findRegion("13", -1));
-        regions.add(textureAtlas.findRegion("14", -1));
+        regions.add(textureAtlas.findRegion("1", regionIndex));
+        regions.add(textureAtlas.findRegion("2", regionIndex));
+        regions.add(textureAtlas.findRegion("3", regionIndex));
+        regions.add(textureAtlas.findRegion("4", regionIndex));
+        regions.add(textureAtlas.findRegion("5", regionIndex));
+        regions.add(textureAtlas.findRegion("6", regionIndex));
+        regions.add(textureAtlas.findRegion("7", regionIndex));
+        regions.add(textureAtlas.findRegion("8", regionIndex));
+        regions.add(textureAtlas.findRegion("9", regionIndex));
+        regions.add(textureAtlas.findRegion("10", regionIndex));
+        regions.add(textureAtlas.findRegion("11", regionIndex));
+        regions.add(textureAtlas.findRegion("12", regionIndex));
+        regions.add(textureAtlas.findRegion("13", regionIndex));
+        regions.add(textureAtlas.findRegion("14", regionIndex));
     }
 
     @Override
     public void render() {
+        //background color
         Gdx.gl.glClearColor(0.41015625f, 0.6015625f, 0.7578125f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
@@ -70,9 +70,9 @@ public class MyGdxGame extends ApplicationAdapter {
         }
 
         batch.begin();
-        batch.draw(regions.get(index++ % 14), xPos, yPos, 150, 200);
+        //draw(regions[index], xPos, yPos, width, height)
+        batch.draw(regions.get(index++ % regions.size), xPos, yPos, 150, 200);
         batch.end();
-//		System.out.println(Gdx.graphics.getDeltaTime());
     }
 
     void reset() {
