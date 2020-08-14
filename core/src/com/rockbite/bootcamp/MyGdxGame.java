@@ -24,7 +24,7 @@ public class MyGdxGame extends ApplicationAdapter {
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(0.529f, 0.808f, 0.922f, 1);
+		Gdx.gl.glClearColor(0.41015625f, 0.6015625f, 0.7578125f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		counter += Gdx.graphics.getDeltaTime();
