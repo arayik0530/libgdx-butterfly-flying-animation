@@ -9,4 +9,5 @@ eclipse.project.name = appName + "-core"
 
 dependencies{
     implementation "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
+    compile "com.badlogicgames.gdx:gdx-tools:1.9.11"
 }
