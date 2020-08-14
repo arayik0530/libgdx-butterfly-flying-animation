@@ -6,8 +6,8 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.rockbite.bootcamp.MyGdxGame;
 
 public class DesktopLauncher {
-    private static boolean rebuildAtlas = true;
-    private static boolean drawDebugOutline = true; //TODO
+    //Atlas rebuilding flag
+    private final static boolean rebuildAtlas = true;
 
     public static void main(String[] arg) {
 
@@ -16,8 +16,7 @@ public class DesktopLauncher {
             settings.maxWidth = 2048;
             settings.maxHeight = 2048;
             settings.duplicatePadding = false;
-            settings.debug = drawDebugOutline;
-            //TexturePacker.process(settings, source folder this can be in
+            //TexturePacker.process(settings, source folder of pictures to be compiled)
             TexturePacker.process(settings, "pics",
                     "images",
                     "butterflyAtlas");

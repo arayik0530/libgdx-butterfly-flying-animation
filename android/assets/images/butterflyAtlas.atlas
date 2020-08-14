@@ -6,99 +6,99 @@ filter: Nearest,Nearest
 repeat: none
 1
   rotate: false
-  xy: 2, 301
-  size: 343, 297
-  orig: 343, 297
+  xy: 2, 281
+  size: 323, 277
+  orig: 323, 277
   offset: 0, 0
   index: -1
 10
   rotate: false
-  xy: 2, 600
-  size: 344, 297
-  orig: 344, 297
+  xy: 2, 560
+  size: 324, 277
+  orig: 324, 277
   offset: 0, 0
   index: -1
 11
   rotate: false
-  xy: 347, 301
-  size: 342, 297
-  orig: 342, 297
+  xy: 327, 281
+  size: 322, 277
+  orig: 322, 277
   offset: 0, 0
   index: -1
 12
   rotate: false
-  xy: 693, 600
-  size: 342, 297
-  orig: 342, 297
+  xy: 653, 560
+  size: 322, 277
+  orig: 322, 277
   offset: 0, 0
   index: -1
 13
   rotate: false
-  xy: 1034, 8
-  size: 341, 295
-  orig: 341, 295
+  xy: 1300, 285
+  size: 321, 275
+  orig: 321, 275
   offset: 0, 0
   index: -1
 14
   rotate: false
-  xy: 1382, 602
-  size: 343, 295
-  orig: 343, 295
+  xy: 1302, 562
+  size: 323, 275
+  orig: 323, 275
   offset: 0, 0
   index: -1
 2
   rotate: false
-  xy: 348, 600
-  size: 343, 297
-  orig: 343, 297
+  xy: 328, 560
+  size: 323, 277
+  orig: 323, 277
   offset: 0, 0
   index: -1
 3
   rotate: false
-  xy: 346, 2
-  size: 341, 297
-  orig: 341, 297
+  xy: 326, 2
+  size: 321, 277
+  orig: 321, 277
   offset: 0, 0
   index: -1
 4
   rotate: false
-  xy: 691, 301
-  size: 341, 297
-  orig: 341, 297
+  xy: 651, 281
+  size: 321, 277
+  orig: 321, 277
   offset: 0, 0
   index: -1
 5
   rotate: false
-  xy: 1037, 602
-  size: 343, 295
-  orig: 343, 295
+  xy: 977, 562
+  size: 323, 275
+  orig: 323, 275
   offset: 0, 0
   index: -1
 6
   rotate: false
-  xy: 689, 4
-  size: 343, 295
-  orig: 343, 295
+  xy: 649, 4
+  size: 323, 275
+  orig: 323, 275
   offset: 0, 0
   index: -1
 7
   rotate: false
-  xy: 1037, 305
-  size: 342, 295
-  orig: 342, 295
+  xy: 1627, 562
+  size: 322, 275
+  orig: 322, 275
   offset: 0, 0
   index: -1
 8
   rotate: false
-  xy: 1381, 305
-  size: 341, 295
-  orig: 341, 295
+  xy: 977, 285
+  size: 321, 275
+  orig: 321, 275
   offset: 0, 0
   index: -1
 9
   rotate: false
   xy: 2, 2
-  size: 342, 297
-  orig: 342, 297
+  size: 322, 277
+  orig: 322, 277
   offset: 0, 0
   index: -1
